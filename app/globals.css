@@ -1,26 +1,133 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+  font-family: "Aeonik";
+  src: url("/fonts/Aeonik-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@font-face {
+  font-family: "Aeonik";
+  src: url("/fonts/Aeonik-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@font-face {
+  font-family: "Aeonik";
+  src: url("/fonts/Aeonik-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Aeonik";
+  src: url("/fonts/Aeonik-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Aeonik";
+  src: url("/fonts/Aeonik-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --color-darkBase: #0e0c15;
+  --color-softBlue: #cad1e9;
+  --color-pinkMagenta: #f33cc0;
+  --color-electricBlue: #4349ff;
+  --font-Aeonik: "Aeonik", sans-serif;
+  --font-sora: var(--font-sora);
+  --font-inter: var(--font-inter);
+  --font-source-code-pro: var(--font-source-code-pro);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("/background.png");
+  object-fit: cover;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@layer utilities {
+  .text-gradient-pink-blue {
+    background: linear-gradient(
+      to bottom,
+      var(--color-pinkMagenta) 9%,
+      var(--color-electricBlue) 72%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .gradient-pink-blue-stroke {
+    border: none;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .gradient-pink-blue-stroke::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 0.8px;
+    background: linear-gradient(45deg, #090edb, #8d1ea2);
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    border-radius: inherit;
+  }
+
+  .gradient-white-stroke {
+    border: none;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .gradient-white-stroke::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 0.8px;
+    background: linear-gradient(135deg, #ffe0e04d, #ffffff4d 6%);
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    border-radius: inherit;
+  }
+
+  .gradient-white-light-stroke {
+    border: none;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .gradient-white-light-stroke::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 0.8px;
+    background: linear-gradient(135deg, #ffffff12, #ffffff04);
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    border-radius: inherit;
+  }
 }
