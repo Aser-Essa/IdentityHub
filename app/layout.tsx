@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Sora, Inter, Source_Code_Pro } from "next/font/google";
 import "./globals.css";
 import Header from "@/sections/Header";
+import Image from "next/image";
 
 const soraSans = Sora({
   variable: "--font-sora",
@@ -34,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${soraSans.variable} ${interSans.variable} ${sourceCodePro.variable} bg-darkBase text-softBlue overflow-x-hidden antialiased`}
+        className={`${soraSans.variable} ${interSans.variable} ${sourceCodePro.variable} bg-darkBase text-softBlue relative overflow-x-hidden antialiased`}
       >
         <Header />
         {children}

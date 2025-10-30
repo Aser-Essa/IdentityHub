@@ -1,4 +1,5 @@
 import HeroSection from "@/sections/HeroSection";
+import Services from "@/sections/Services";
 import { gsap } from "gsap";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
@@ -11,6 +12,9 @@ export default function Home() {
   return (
     <>
       <HeroSection />
+      <Services />
+      {/* <Features /> */}
+
       <div className="h-[200vh]"></div>
     </>
   );

@@ -61,12 +61,18 @@ body {
 }
 
 @layer utilities {
-  .text-gradient-pink-blue {
+  .text-gradient-pink-blue-verticle {
     background: linear-gradient(
       to bottom,
       var(--color-pinkMagenta) 9%,
       var(--color-electricBlue) 72%
     );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .text-gradient-blue-pink-horizontal {
+    background: linear-gradient(to right, #090edb -140%, #8d1ea2 90%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -89,6 +95,7 @@ body {
     -webkit-mask-composite: xor;
     mask-composite: exclude;
     border-radius: inherit;
+    z-index: 1;
   }
 
   .gradient-white-stroke {
@@ -130,4 +137,18 @@ body {
     mask-composite: exclude;
     border-radius: inherit;
   }
+}
+
+.masked-image {
+  --mask-url: url("/mask-image.svg");
+  -webkit-mask-image: var(--mask-url);
+  mask-image: var(--mask-url);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  padding: 26px;
+  padding-bottom: 9px;
 }

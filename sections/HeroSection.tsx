@@ -1,7 +1,6 @@
 import BackgroundLights from "@/components/BackgroundLights";
 import FloatingBalls from "@/components/FloatingBalls";
 import HeroContent from "@/components/HeroContent";
-import HeroInfoCards from "@/components/HeroInfoCards";
 import HeroVisual from "@/components/HeroVisual";
 import Image from "next/image";
 

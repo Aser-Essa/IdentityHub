@@ -1,15 +1,13 @@
 "use client";
-import React, { useEffect, useRef } from "react";
-import Label from "./Label";
 import Button from "./Button";
-import Image from "next/image";
+import Label from "./Label";
 import UnderlinedWord from "./UnderlinedWord";
 
 export default function HeroContent() {
   return (
     <>
       <Label>Secure your data</Label>
-      <div className="text-gradient-pink-blue font-sora relative mt-1.5 text-[clamp(30px,5vw,48px)] leading-[120%] font-semibold">
+      <div className="text-gradient-pink-blue-verticle font-sora relative mt-1.5 text-[clamp(32px,5vw,48px)] leading-[120%] font-semibold">
         <p>
           Identity-hub is a better way to
           <br className="hidden sm:block" /> achieve{" "}
