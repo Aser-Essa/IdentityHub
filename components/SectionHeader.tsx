@@ -4,7 +4,7 @@ import Label from "./Label";
 type SectionHeaderProps = {
   label: string;
   title: React.ReactNode;
-  subTitle: string;
+  subTitle?: string;
 };
 
 export default function SectionHeader({
@@ -18,9 +18,11 @@ export default function SectionHeader({
       <div className="font-sora text-softBlue mt-1.5 text-[clamp(28px,4.5vw,32px)] leading-[120%] font-semibold">
         {title}
       </div>
-      <p className="font-Aeonik mt-3.5 text-[clamp(16px,2.8vw,20px)] sm:whitespace-pre-line">
-        {subTitle}
-      </p>
+      {subTitle && (
+        <p className="font-Aeonik mt-3.5 text-[clamp(16px,2.8vw,20px)] sm:whitespace-pre-line">
+          {subTitle}
+        </p>
+      )}
     </div>
   );
 }

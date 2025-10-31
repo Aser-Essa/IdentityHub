@@ -19,11 +19,7 @@ export default function Header() {
           ))}
         </ul>
       </nav>
-      <Button
-        className={
-          "gradient-stroke hidden rounded-[9px] text-xs before:bg-[linear-gradient(45deg,_#090edb,_#8d1ea2)] md:block"
-        }
-      >
+      <Button className={"hidden md:block"}>
         <div className="flex items-center gap-1">
           <p>Start free trial</p>
           <IoIosArrowForward />

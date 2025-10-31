@@ -1,11 +1,19 @@
 import Image from "next/image";
 import React from "react";
 
-export default function FeaturesList({ mainColor, featuresList }) {
+type FeaturesListProps = {
+  mainColor: string;
+  featuresList: string[];
+};
+
+export default function FeaturesList({
+  mainColor,
+  featuresList,
+}: FeaturesListProps) {
   return (
     <>
       <ul className="space-y-[19px]">
-        {featuresList.map((item, idx) => (
+        {featuresList.map((item: string, idx: number) => (
           <li key={`${item}-${idx}`} className="flex items-start gap-3.5">
             <Image
               src={`/${mainColor}-checkmark-circle.svg`}

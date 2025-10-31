@@ -93,3 +93,43 @@ export const FeaturesCardsData = [
     imageUrl: "/feature-card-image3.png",
   },
 ];
+
+export const PricingPlansData = [
+  {
+    planType: "Basic",
+    price: 0,
+    currency: "$",
+    description: "AI chatbot, personalized recommendations",
+    features: [
+      "Type of threat",
+      "Online presence",
+      "Access to all modules",
+      "Notability",
+    ],
+  },
+  {
+    planType: "Premium",
+    price: 9.99,
+    currency: "$",
+    description: "Advanced AI chatbot, priority support, analytics dashboard",
+    features: [
+      "Type of threat",
+      "Online presence",
+      "Access to all modules",
+      "Notability",
+      "Optimize existing websites",
+    ],
+  },
+  {
+    planType: "Enterprise",
+    price: 20.99,
+    currency: "$",
+    description: "AI chatbot, personalized recommendations",
+    features: [
+      "Type of threat",
+      "Online presence",
+      "Access to all modules",
+      "Notability",
+    ],
+  },
+];

@@ -20,17 +20,11 @@ export default function HeroContent() {
         online and travel.
       </p>
       <div className="mt-6.5 flex items-center justify-center gap-3">
-        <Button
-          className={
-            "gradient-stroke rounded-[9px] text-xs font-medium text-white before:bg-[linear-gradient(45deg,_#090edb,_#8d1ea2)]"
-          }
-        >
-          Start free trial
-        </Button>
+        <Button>Start free trial</Button>
 
         <Button
           className={
-            "gradient-stroke rounded-[9px] bg-[linear-gradient(45deg,_#090edb,_#DA24BB)] text-xs font-medium text-white before:bg-[linear-gradient(135deg,_#ffe0e04d,_#ffffff4d_6%)]"
+            "bg-[linear-gradient(45deg,_#090edb,_#DA24BB)] before:bg-[linear-gradient(135deg,_#ffe0e04d,_#ffffff4d_6%)]"
           }
         >
           Use it Now

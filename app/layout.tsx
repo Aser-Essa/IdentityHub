@@ -1,8 +1,7 @@
-import type { Metadata } from "next";
-import { Sora, Inter, Source_Code_Pro } from "next/font/google";
-import "./globals.css";
 import Header from "@/sections/Header";
-import Image from "next/image";
+import type { Metadata } from "next";
+import { Inter, Sora, Source_Code_Pro } from "next/font/google";
+import "./globals.css";
 
 const soraSans = Sora({
   variable: "--font-sora",

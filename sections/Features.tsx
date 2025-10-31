@@ -5,7 +5,7 @@ import { FeaturesCardsData } from "@/constants";
 
 export default function Features() {
   return (
-    <div className="mt-40 px-6 md:px-20">
+    <section className="mt-36.5 px-6 md:px-20">
       <SectionHeader
         label={"Features"}
         title={
@@ -33,6 +33,6 @@ export default function Features() {
           ),
         )}
       </div>
-    </div>
+    </section>
   );
 }
