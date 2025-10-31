@@ -5,7 +5,7 @@ import { ServicesCardsData } from "@/constants";
 export default function Services() {
   return (
     <>
-      <section className="mt-36.5 px-6 sm:px-10">
+      <section className="mt-36.5 px-4 sm:px-10">
         <SectionHeader
           label={"Services"}
           title={

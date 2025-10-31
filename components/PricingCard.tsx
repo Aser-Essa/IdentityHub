@@ -20,7 +20,7 @@ export default function PricingCard({ plan }: { plan: PricingPlan }) {
     <>
       <div
         className={cn(
-          `xs:h-[623.4px] min-w-67.5 flex-1 rounded-[26px] border border-[#ffffff1a] bg-[linear-gradient(45deg,_#00000029,_#53546c29)] px-6.5 py-9.5 lg:h-auto lg:py-6.5`,
+          `min-w-67.5 flex-1 rounded-[26px] border border-[#ffffff1a] bg-[linear-gradient(45deg,_#00000029,_#53546c29)] px-6.5 py-9.5 sm:h-[623.4px] lg:h-auto lg:py-6.5`,
           isPremium && "py-9.5",
         )}
       >
@@ -31,7 +31,7 @@ export default function PricingCard({ plan }: { plan: PricingPlan }) {
           <p className="font-Aeonik leading-[130%]">{description}</p>
           <span className="font-sora flex items-center text-white">
             <p className="text-[32px]">{currency}</p>
-            <p className="text-[70px] leading-[70.5px] font-semibold">
+            <p className="text-[60px] leading-[70.5px] font-semibold sm:text-[70px]">
               {price}
             </p>
           </span>

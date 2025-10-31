@@ -4,7 +4,7 @@ import TestimonialsSwiper from "@/components/TestimonialsSwiper";
 
 export default function Testimonials() {
   return (
-    <section className="mt-36.5 px-6 md:px-20">
+    <section className="mt-36.5 px-4 md:px-20">
       <SectionHeader
         label={"Testimonials"}
         title={
