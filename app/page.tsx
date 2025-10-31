@@ -19,8 +19,6 @@ export default function Home() {
       <Features />
       <Pricing />
       <Testimonials />
-
-      <div className="h-[200vh]"></div>
     </>
   );
 }

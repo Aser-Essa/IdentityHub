@@ -2,6 +2,7 @@ import Header from "@/sections/Header";
 import type { Metadata } from "next";
 import { Inter, Sora, Source_Code_Pro } from "next/font/google";
 import "./globals.css";
+import Footer from "@/components/Footer";
 
 const soraSans = Sora({
   variable: "--font-sora",
@@ -38,6 +39,7 @@ export default function RootLayout({
       >
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

@@ -6,7 +6,7 @@ import React from "react";
 
 export default function Pricing() {
   return (
-    <section className="mt-36.5 px-4 md:px-20">
+    <section className="mt-36.5 px-4 md:px-20" id="pricing">
       <SectionHeader
         label={"Pricing"}
         title={

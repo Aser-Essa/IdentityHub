@@ -5,7 +5,7 @@ import { FeaturesCardsData } from "@/constants";
 
 export default function Features() {
   return (
-    <section className="mt-36.5 px-4 md:px-20">
+    <section className="mt-36.5 px-4 md:px-20" id="feature">
       <SectionHeader
         label={"Features"}
         title={

@@ -1,7 +1,14 @@
+"use client";
 import Image from "next/image";
 import React, { useEffect, useRef } from "react";
 
-export default function UnderlinedWord({ children }: { children: string }) {
+export default function UnderlinedWord({
+  children,
+  size,
+}: {
+  children: string;
+  size: "bigger" | "smaller";
+}) {
   const wordRef = useRef<HTMLSpanElement | null>(null);
   const underlineRef = useRef<HTMLSpanElement | null>(null);
 
@@ -15,7 +22,10 @@ export default function UnderlinedWord({ children }: { children: string }) {
     const parentRect = wordEl.parentElement?.getBoundingClientRect();
 
     if (!rect || !parentRect) return;
-    underlineEl.style.width = `${rect.width + rect.width * 0.16}px`;
+    underlineEl.style.width =
+      size === "bigger"
+        ? `${rect.width + rect.width * 0.16}px`
+        : `${rect.width - rect.width * 0.16}px`;
 
     const leftOffset = (underlineEl.clientWidth - rect.width) / 2;
 
@@ -36,8 +46,13 @@ export default function UnderlinedWord({ children }: { children: string }) {
     <>
       <span ref={wordRef}>{children}</span>
 
-      <span className="absolute h-3" ref={underlineRef}>
-        <Image src={"/underline-word.svg"} fill alt="underline-word" />
+      <span className="absolute aspect-[100/3] min-h-3" ref={underlineRef}>
+        <Image
+          src={"/underline-word.svg"}
+          fill
+          alt="underline-word"
+          className="object-cover"
+        />
       </span>
     </>
   );

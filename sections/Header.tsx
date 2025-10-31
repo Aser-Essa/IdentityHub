@@ -8,7 +8,7 @@ import { FaBars } from "react-icons/fa6";
 
 export default function Header() {
   return (
-    <header className="top-0 mx-2 mt-4 flex h-[51px] items-center justify-between gap-8 rounded-[9px] border border-[#ffffff1a] bg-[rgba(15,12,23,0.17)] p-2.5 sm:mx-4 md:mx-14 lg:mx-40 2xl:mx-71.5">
+    <header className="fixed top-0 left-1/2 z-10000 mt-4 flex h-[51px] w-[calc(100%-16px)] max-w-[963px] -translate-x-1/2 items-center justify-between gap-8 rounded-[9px] border border-[#ffffff1a] bg-[rgba(15,12,23,0.17)] p-2.5 backdrop-blur-[8px] sm:w-[calc(100%-32px)] md:w-[85%]">
       <Logo />
       <nav className="hidden md:block">
         <ul className="font-Aeonik flex items-center gap-5 text-[13px] text-nowrap">

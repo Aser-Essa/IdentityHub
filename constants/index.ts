@@ -237,3 +237,24 @@ export const testimonialsData = [
     date: "2025-10-01",
   },
 ];
+
+export const footerLinksArray = [
+  {
+    label: "Feature",
+    href: "#feature",
+  },
+  {
+    label: "Services",
+    href: "#services",
+  },
+
+  {
+    label: "Pricing",
+    href: "#pricing",
+  },
+
+  {
+    label: "How To Use",
+    href: "#how-to-use",
+  },
+];
