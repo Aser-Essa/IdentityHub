@@ -55,3 +55,41 @@ export const HeroInfoCardsDetails = [
     description: "123 456 789 1243",
   },
 ];
+
+export const FeaturesCardsData = [
+  {
+    mainColor: "blue",
+    title: "Protect Personal information",
+    featuresList: [
+      "The first step involves identifying all places where your personal information might be present.",
+      "Once you've identified where your information is held, the next step is to contact the administrators of this platform",
+      "Removing personal information is not a one-time task but requires ongoing vigilance.",
+      "There are professional services and tools available that specialise in personal information removal.",
+    ],
+    imageUrl: "/feature-card-image1.png",
+  },
+
+  {
+    mainColor: "violet",
+    title: "Detailed Reporting",
+    featuresList: [
+      "The first step involves identifying all places where your personal information might be present.",
+      "Once you've identified where your information is held, the next step is to contact the administrators of this platform",
+      "Removing personal information is not a one-time task but requires ongoing vigilance.",
+      "There are professional services and tools available that specialise in personal information removal.",
+    ],
+    imageUrl: "/feature-card-image2.png",
+  },
+
+  {
+    mainColor: "green",
+    title: "Secure All Data",
+    featuresList: [
+      "The first step involves identifying all places where your personal information might be present.",
+      "Once you've identified where your information is held, the next step is to contact the administrators of this platform",
+      "Removing personal information is not a one-time task but requires ongoing vigilance.",
+      "There are professional services and tools available that specialise in personal information removal.",
+    ],
+    imageUrl: "/feature-card-image3.png",
+  },
+];

@@ -21,7 +21,7 @@ export default function Header() {
       </nav>
       <Button
         className={
-          "gradient-pink-blue-stroke hidden rounded-[9px] text-xs md:block"
+          "gradient-stroke hidden rounded-[9px] text-xs before:bg-[linear-gradient(45deg,_#090edb,_#8d1ea2)] md:block"
         }
       >
         <div className="flex items-center gap-1">

@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function HeroSection() {
   return (
     <section className="relative">
-      <BackgroundLights />
+      <BackgroundLights className="top-27.5" />
       <Image
         src={"/radio-waves.svg"}
         fill

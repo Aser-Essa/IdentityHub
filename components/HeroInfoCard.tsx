@@ -43,7 +43,7 @@ export default function HeroInfoCard({
     <>
       <div
         className={
-          "gradient-white-light-stroke !absolute z-20 flex h-[52px] items-center gap-3 rounded-xl bg-[linear-gradient(160deg,_#1b1c3628,_#70717a28_80%)] p-2 backdrop-blur-[10px]"
+          "gradient-stroke !absolute z-20 flex h-[52px] items-center gap-3 rounded-xl bg-[linear-gradient(160deg,_#1b1c3628,_#70717a28_80%)] p-2 backdrop-blur-[10px] before:bg-[linear-gradient(160deg,_#ffffff11,_#ffffff26)]"
         }
         style={{ ...positons }}
       >

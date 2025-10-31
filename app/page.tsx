@@ -1,3 +1,4 @@
+import Features from "@/sections/Features";
 import HeroSection from "@/sections/HeroSection";
 import Services from "@/sections/Services";
 import { gsap } from "gsap";
@@ -13,7 +14,7 @@ export default function Home() {
     <>
       <HeroSection />
       <Services />
-      {/* <Features /> */}
+      <Features />
 
       <div className="h-[200vh]"></div>
     </>
