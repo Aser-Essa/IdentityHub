@@ -1,6 +1,5 @@
 import BackgroundLights from "@/components/BackgroundLights";
 import PricingCard from "@/components/PricingCard";
-
 import SectionHeader from "@/components/SectionHeader";
 import { PricingPlansData } from "@/constants";
 import React from "react";

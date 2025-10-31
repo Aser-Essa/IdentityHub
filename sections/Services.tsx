@@ -1,7 +1,6 @@
 import SectionHeader from "@/components/SectionHeader";
 import ServiceCard from "@/components/ServiceCard";
-import Image from "next/image";
-import React from "react";
+import { ServicesCardsData } from "@/constants";
 
 export default function Services() {
   return (
@@ -21,50 +20,14 @@ export default function Services() {
         />
 
         <div className="mt-10 flex flex-wrap items-center justify-center gap-5">
-          <ServiceCard
-            icon={
-              <Image
-                src={"/service-card-1.svg"}
-                width={42}
-                height={42}
-                alt="service-card-1"
-              />
-            }
-            title={"Personal Information removal"}
-            description={
-              "Lets users quickly find answers to their questions without having to search through multiple sources."
-            }
-          />
-
-          <ServiceCard
-            icon={
-              <Image
-                src={"/service-card-2.svg"}
-                width={42}
-                height={42}
-                alt="service-card-2"
-              />
-            }
-            title={"Cloaking Alias Profiles"}
-            description={
-              "Lets users quickly find answers to their questions without having to search through multiple sources."
-            }
-          />
-
-          <ServiceCard
-            icon={
-              <Image
-                src={"/service-card-3.svg"}
-                width={42}
-                height={42}
-                alt="service-card-3"
-              />
-            }
-            title={"Virtual identities Security"}
-            description={
-              "Lets users quickly find answers to their questions without having to search through multiple sources."
-            }
-          />
+          {ServicesCardsData?.map(({ title, description, iconSrc }) => (
+            <ServiceCard
+              key={title}
+              iconSrc={iconSrc}
+              title={title}
+              description={description}
+            />
+          ))}
         </div>
       </section>
     </>

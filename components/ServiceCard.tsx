@@ -1,17 +1,17 @@
 import Image from "next/image";
 import React from "react";
 
-type ServiceCardProps = {
-  icon: React.ReactNode;
+type ServiceCardData = {
+  iconSrc: string;
   title: string;
   description: string;
 };
 
 export default function ServiceCard({
-  icon,
+  iconSrc,
   title,
   description,
-}: ServiceCardProps) {
+}: ServiceCardData) {
   return (
     <>
       <div className="relative h-fit w-fit">
@@ -23,8 +23,8 @@ export default function ServiceCard({
         <div className="masked-image relative h-74 w-85 rounded-[25.6px] text-[#D6DDF8]">
           <Image src="/mask-border.svg" fill alt="masked-border" />
 
-          {icon}
-          <p className="font-Aeonik mt-5.5 text-[22px] leading-[120%] font-medium">
+          <Image src={iconSrc} width={42} height={42} alt="service-card-1" />
+          <p className="font-Aeonik mt-5.5 w-[70%] text-[22px] leading-[120%] font-medium">
             {title}
           </p>
           <p className="font-Aeonik mt-2 leading-[140%]">{description}</p>

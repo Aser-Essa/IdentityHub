@@ -2,6 +2,7 @@ import Features from "@/sections/Features";
 import HeroSection from "@/sections/HeroSection";
 import Pricing from "@/sections/Pricing";
 import Services from "@/sections/Services";
+import Testimonials from "@/sections/Testimonials";
 import { gsap } from "gsap";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
@@ -16,8 +17,8 @@ export default function Home() {
       <HeroSection />
       <Services />
       <Features />
-
       <Pricing />
+      <Testimonials />
 
       <div className="h-[200vh]"></div>
     </>
