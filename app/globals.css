@@ -51,7 +51,8 @@
   --font-source-code-pro: var(--font-source-code-pro);
 }
 
-body {
+body,
+.preloader-wrapper {
   background-image: url("/background.png");
   object-fit: cover;
 }
@@ -62,10 +63,11 @@ body {
 
 @layer utilities {
   .text-gradient-pink-blue-verticle {
+    --grad-pos: 0%;
     background: linear-gradient(
       to bottom,
-      var(--color-pinkMagenta) 9%,
-      var(--color-electricBlue) 72%
+      var(--color-pinkMagenta) calc(9% + var(--grad-pos)),
+      var(--color-electricBlue) calc(72% + var(--grad-pos))
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

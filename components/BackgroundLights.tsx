@@ -1,11 +1,10 @@
 import { cn } from "@/lib/utils";
-import React from "react";
 
 export default function BackgroundLights({ className }: { className: string }) {
   return (
     <div
       className={cn(
-        `absolute left-1/2 -z-[1000] mx-auto aspect-square max-h-181 w-screen max-w-181 -translate-x-1/2 overflow-hidden bg-white mix-blend-color-dodge blur-[84px]`,
+        `BackgroundLights absolute left-1/2 -z-[1000] mx-auto aspect-square max-h-181 w-screen max-w-181 -translate-x-1/2 overflow-hidden bg-white mix-blend-color-dodge blur-[84px]`,
         className,
       )}
     >

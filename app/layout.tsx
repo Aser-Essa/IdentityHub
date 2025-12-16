@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Inter, Sora, Source_Code_Pro } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer";
+import Preloader from "@/components/Preloader";
 
 const soraSans = Sora({
   variable: "--font-sora",
@@ -37,9 +38,15 @@ export default function RootLayout({
       <body
         className={`${soraSans.variable} ${interSans.variable} ${sourceCodePro.variable} bg-darkBase text-softBlue relative overflow-x-hidden antialiased`}
       >
+        <Preloader />
+
         <Header />
-        {children}
-        <Footer />
+        <div id="smooth-wrapper">
+          <div id="smooth-content">
+            {children}
+            <Footer />
+          </div>
+        </div>
       </body>
     </html>
   );

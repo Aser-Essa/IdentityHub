@@ -1,9 +1,12 @@
+"use client";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 import Image from "next/image";
 import React from "react";
 
 export default function FloatingBalls() {
   return (
-    <>
+    <div className="FloatingBalls">
       <Image
         src={"/orangeBall.svg"}
         width={13}
@@ -29,20 +32,20 @@ export default function FloatingBalls() {
       />
 
       <Image
-        src={"/greenBall.svg"}
-        width={19}
-        height={19}
-        alt="greenBall"
-        className="absolute top-[40%] right-[9.5%] opacity-75 lg:top-[37.7%] lg:right-[19%]"
-      />
-
-      <Image
         src={"/violetBall.svg"}
         width={10}
         height={10}
         alt="violetBall"
         className="absolute top-[35%] left-[15%] opacity-75 lg:top-[46%] lg:left-[29.7%]"
       />
-    </>
+
+      <Image
+        src={"/greenBall.svg"}
+        width={19}
+        height={19}
+        alt="greenBall"
+        className="absolute top-[40%] right-[9.5%] opacity-75 lg:top-[37.7%] lg:right-[19%]"
+      />
+    </div>
   );
 }

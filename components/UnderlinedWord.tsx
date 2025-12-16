@@ -34,6 +34,7 @@ export default function UnderlinedWord({
 
     underlineEl.style.left = `${left}px`;
     underlineEl.style.top = `${top}px`;
+    underlineEl.style.opacity = "1";
   }
 
   useEffect(() => {
@@ -46,7 +47,10 @@ export default function UnderlinedWord({
     <>
       <span ref={wordRef}>{children}</span>
 
-      <span className="absolute aspect-[100/3] min-h-3" ref={underlineRef}>
+      <span
+        className="absolute aspect-[100/3] min-h-3 opacity-0 transition-opacity duration-300"
+        ref={underlineRef}
+      >
         <Image
           src={"/underline-word.svg"}
           fill
