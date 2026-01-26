@@ -101,7 +101,7 @@ export default function Preloader() {
           duration: 0.8,
           ease: "power1.inOut",
         },
-        "-=0.2",
+        "-=0.35",
       );
 
     coreTimeline.eventCallback("onComplete", () => {
