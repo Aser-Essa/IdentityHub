@@ -8,6 +8,7 @@ import { FaBars } from "react-icons/fa6";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { Link } from "react-scroll";
+import SideMobileMenu from "@/components/SideMobileMenu";
 
 export default function Header() {
   useGSAP(() => {
@@ -55,7 +56,9 @@ export default function Header() {
         </div>
       </Button>
 
-      <FaBars className="block cursor-pointer text-2xl md:hidden" />
+      {/* <FaBars className="block cursor-pointer text-2xl md:hidden" /> */}
+
+      <SideMobileMenu />
     </header>
   );
 }
