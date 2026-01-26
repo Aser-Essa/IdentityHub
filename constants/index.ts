@@ -1,27 +1,27 @@
 export const navLinksArray = [
   {
     label: "Services",
-    href: "#services",
+    href: "services",
   },
 
   {
     label: "Feature",
-    href: "#feature",
+    href: "feature",
   },
 
   {
     label: "Pricing",
-    href: "#pricing",
+    href: "pricing",
   },
 
   {
     label: "Partners",
-    href: "#partners",
+    href: "testimonials",
   },
 
   {
     label: "About us",
-    href: "#about-us",
+    href: "CTA",
   },
 ];
 
@@ -241,20 +241,20 @@ export const testimonialsData = [
 export const footerLinksArray = [
   {
     label: "Feature",
-    href: "#feature",
+    href: "feature",
   },
   {
     label: "Services",
-    href: "#services",
+    href: "services",
   },
 
   {
     label: "Pricing",
-    href: "#pricing",
+    href: "pricing",
   },
 
   {
     label: "How To Use",
-    href: "#how-to-use",
+    href: "top",
   },
 ];

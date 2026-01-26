@@ -126,6 +126,7 @@ body,
   background-color: white !important;
   opacity: 1 !important;
   position: relative !important;
+  margin-left: 12px !important;
 }
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active::before {

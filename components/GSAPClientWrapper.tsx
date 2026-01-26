@@ -1,4 +1,5 @@
 "use client";
+import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
@@ -14,5 +15,11 @@ export default function GSAPClientWrapper({
 }: GSAPClientWrapperProps) {
   gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin, SplitText);
 
-  return <>{children}</>;
+  useGSAP(() => {
+    gsap.to(".GSAP-client-wrapper", {
+      opacity: 100,
+    });
+  });
+
+  return <div className="GSAP-client-wrapper opacity-0">{children}</div>;
 }

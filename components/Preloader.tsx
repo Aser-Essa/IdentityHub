@@ -38,7 +38,7 @@ export default function Preloader() {
         "<",
       )
       .to(
-        ".logo",
+        ".preloader-wrapper .logo-container",
         {
           scale: 1.1,
           yoyo: true,
@@ -63,7 +63,7 @@ export default function Preloader() {
         },
         "<",
       )
-      .from(".logo", {
+      .from(".preloader-wrapper  .logo-container", {
         opacity: 0,
         scale: 0,
         ease: "back.out(4)",
@@ -133,7 +133,10 @@ export default function Preloader() {
             ease: "power2.inOut",
           },
           "-=0.35",
-        );
+        )
+        .to(".preloader-wrapper", {
+          display: "none",
+        });
     });
   }, []);
 
@@ -148,7 +151,7 @@ export default function Preloader() {
 
       <div className="relative z-[2000] flex flex-col items-center gap-10">
         <div className="flex w-fit items-center justify-center gap-4">
-          <div className="logo relative h-[70px] w-[65px] scale-100">
+          <div className="logo-container relative h-[70px] w-[65px] scale-100">
             <Image src={"/logo.svg"} fill alt="logo" />
           </div>
           <div className="logo-title-wrapper overflow-hidden">

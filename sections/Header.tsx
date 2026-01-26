@@ -2,12 +2,12 @@
 import Button from "@/components/Button";
 import Logo from "@/components/Logo";
 import { navLinksArray } from "@/constants";
-import Link from "next/link";
 import React from "react";
 import { IoIosArrowForward } from "react-icons/io";
 import { FaBars } from "react-icons/fa6";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { Link } from "react-scroll";
 
 export default function Header() {
   useGSAP(() => {
@@ -36,11 +36,14 @@ export default function Header() {
       style={{ clipPath: "polygon(0 0, 0 0, 0 100%, 0% 100%)" }}
     >
       <Logo />
+
       <nav className="hidden md:block">
         <ul className="font-Aeonik flex items-center gap-5 text-[13px] text-nowrap">
           {navLinksArray.map(({ label, href }) => (
-            <li key={label}>
-              <Link href={href}>{label}</Link>
+            <li key={label} className="cursor-pointer">
+              <Link to={`${href}`} smooth={true} duration={600} offset={-100}>
+                {label}
+              </Link>
             </li>
           ))}
         </ul>

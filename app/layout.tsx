@@ -2,7 +2,7 @@ import Header from "@/sections/Header";
 import type { Metadata } from "next";
 import { Inter, Sora, Source_Code_Pro } from "next/font/google";
 import "./globals.css";
-import Footer from "@/components/Footer";
+import Footer from "@/sections/Footer";
 import Preloader from "@/components/Preloader";
 
 const soraSans = Sora({
@@ -34,13 +34,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="overflow-x-hidden">
       <body
         className={`${soraSans.variable} ${interSans.variable} ${sourceCodePro.variable} bg-darkBase text-softBlue relative overflow-x-hidden antialiased`}
       >
         <Preloader />
 
         <Header />
+        <div id="top"></div>
         <div id="smooth-wrapper">
           <div id="smooth-content">
             {children}

@@ -11,8 +11,7 @@ export default function HeroSection() {
       scrollTrigger: {
         trigger: ".herosection",
         start: "top 25%",
-        end: "85% 100%",
-        // markers: true,
+        end: "85% 20%",
       },
     });
 
@@ -30,7 +29,7 @@ export default function HeroSection() {
           ease: "power1.inOut",
           stagger: 0.05,
         },
-        "=-0.8",
+        "-=0.8",
       )
       .from(
         ".hero-content .btns button:first-of-type ",
@@ -39,7 +38,7 @@ export default function HeroSection() {
           x: -30,
           ease: "power1.inOut",
         },
-        "=-0.55",
+        "-=0.55",
       )
       .from(
         ".hero-content .btns button:last-of-type ",
@@ -51,7 +50,7 @@ export default function HeroSection() {
         "<",
       )
       .from(
-        ".radio-waves",
+        ".herosection .radio-waves",
         {
           width: 0,
           duration: 2,

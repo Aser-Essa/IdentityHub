@@ -1,11 +1,11 @@
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
+import { Link } from "react-scroll";
 
 export default function Logo() {
   return (
-    <Link href={"/"}>
-      <div className="flex w-fit items-center gap-[6px]">
+    <Link to={`top`} smooth={true} duration={500} offset={0}>
+      <div className="logo flex w-fit items-center gap-[6px]">
         <div className="relative h-[21px] w-[19px]">
           <Image src={"/logo.svg"} fill alt="logo" />
         </div>

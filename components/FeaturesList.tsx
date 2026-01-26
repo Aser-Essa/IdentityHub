@@ -12,9 +12,12 @@ export default function FeaturesList({
 }: FeaturesListProps) {
   return (
     <>
-      <ul className="space-y-[19px]">
+      <ul className="space-y-[19px] overflow-hidden">
         {featuresList.map((item: string, idx: number) => (
-          <li key={`${item}-${idx}`} className="flex items-start gap-3.5">
+          <li
+            key={`${item}-${idx}`}
+            className="feature-item flex items-start gap-3.5"
+          >
             <Image
               src={`/${mainColor}-checkmark-circle.svg`}
               width={22}

@@ -14,7 +14,7 @@ export default function ServiceCard({
 }: ServiceCardData) {
   return (
     <>
-      <div className="relative h-fit w-fit">
+      <div className="service-card relative h-fit w-fit">
         <div className="absolute top-12.5 right-8 z-[-10000] h-48.5 w-48.5 overflow-hidden rounded-[500px] opacity-40 mix-blend-color-dodge blur-[44px]">
           <div className="absolute h-full w-full bg-white"></div>
           <div className="absolute h-full w-full bg-[#907cff] opacity-[16%]"></div>
