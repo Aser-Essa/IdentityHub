@@ -71,7 +71,7 @@ export default function SideMobileMenu() {
                   </li>
                 ))}
               </ul>
-              {/* <BackgroundLights className="top-1/2 -translate-y-1/2 opacity-60" /> */}
+              <BackgroundLights className="top-1/2 -translate-y-1/2 opacity-60" />
 
               {/* CTA */}
               <Button className="!absolute bottom-6 left-1/2 flex h-[56px] w-[calc(100%-48px)] -translate-x-1/2 items-center justify-center gap-1 text-base">
