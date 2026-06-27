@@ -38,7 +38,7 @@ export default function RootLayout({
       <body
         className={`${soraSans.variable} ${interSans.variable} ${sourceCodePro.variable} bg-darkBase text-softBlue relative overflow-x-hidden antialiased`}
       >
-        <Preloader />
+        {/* <Preloader /> */}
         <Header />
         <div id="top"></div>
         <div id="smooth-wrapper">
