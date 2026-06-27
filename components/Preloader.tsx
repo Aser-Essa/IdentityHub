@@ -121,7 +121,7 @@ export default function Preloader() {
         .to(
           ".preloader-wrapper",
           {
-            duration: isMobile ? 0.75 : 0.5,
+            duration: isMobile ? 0.65 : 0.5,
             ease: "power2.inOut",
             y: 1250,
             x: 5000,
