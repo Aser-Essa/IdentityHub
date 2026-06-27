@@ -10,14 +10,14 @@ export default function Home() {
   return (
     <>
       <GSAPClientWrapper>
-        <>
+        <div>
           <HeroSection />
           <Services />
           <Features />
           <Pricing />
           <Testimonials />
           <CTA />
-        </>
+        </div>
       </GSAPClientWrapper>
     </>
   );
