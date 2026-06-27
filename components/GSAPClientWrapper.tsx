@@ -19,6 +19,7 @@ export default function GSAPClientWrapper({
     ScrollSmoother.create({
       smooth: 1.5,
       effects: true,
+      smoothTouch: 0.001,
     });
   }, []);
 
