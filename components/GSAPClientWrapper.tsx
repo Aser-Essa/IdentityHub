@@ -18,7 +18,7 @@ export default function GSAPClientWrapper({
   useGSAP(() => {
     ScrollSmoother.create({
       smooth: 1.5,
-      smoothTouch: .1,
+      smoothTouch: 0,
       effects: true,
       normalizeScroll: true,
     });
