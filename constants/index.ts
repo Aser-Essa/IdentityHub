@@ -28,14 +28,14 @@ export const navLinksArray = [
 export const HeroInfoCardsDetails = [
   {
     left: 28,
-    y: 54,
+    top: 54,
     iconSrc: "/hero-info-card-icon-1.svg",
     title: "One-time passcode",
     description: "Kas3345-r32",
   },
   {
     right: 27,
-    y: 44,
+    top: 44,
     iconSrc: "/hero-info-card-icon-2.svg",
     title: "Phone numbers",
     description: "+1 (456) 453-3456",

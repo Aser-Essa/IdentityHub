@@ -141,9 +141,9 @@ export default function Preloader() {
   }, []);
 
   return (
-    <div className="preloader-wrapper overflow-x-hidden bg-darkBase fixed inset-0 z-[99999] flex items-center justify-center opacity-0">
+    <div className="preloader-wrapper bg-darkBase fixed inset-0 z-[99999] flex items-center justify-center opacity-0">
       <div className="absolute min-h-screen w-full">
-        {/* <BackgroundLights className="top-27.5 z-50 opacity-60" /> */}
+        <BackgroundLights className="top-27.5 z-50 opacity-60" />
         <div className="absolute top-[20%] z-50 h-full w-full">
           <FloatingBalls />
         </div>

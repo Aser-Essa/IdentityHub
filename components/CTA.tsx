@@ -59,7 +59,7 @@ export default function CTA() {
   return (
     <>
       <section className="CTA-section relative mt-36.5 min-h-[504px]" id="CTA">
-        {/* <BackgroundLights className="BackgroundLightss -top-11.5 left-[42.6%] z-50 max-h-120 max-w-120 opacity-45 blur-[50px]" /> */}
+        <BackgroundLights className="BackgroundLightss -top-11.5 left-[42.6%] z-50 max-h-120 max-w-120 opacity-45 blur-[50px]" />
         <div className="radio-wavess absolute top-1/2 !left-1/2 aspect-square max-h-[595px] w-[95%] max-w-[595px] -translate-x-1/2 -translate-y-1/2 sm:-top-11.5 sm:w-[90%] sm:translate-y-0">
           <Image
             src={"/radio-waves.svg"}
@@ -68,7 +68,7 @@ export default function CTA() {
             className="object-cover"
           />
         </div>
-        <div className="font-sora px-4 md:px-20 absolute top-1/2 left-1/2 z-50 w-full -translate-1/2 text-center">
+        <div className="font-sora absolute top-1/2 left-1/2 z-50 w-full -translate-1/2 text-center">
           <p className="mb-5 text-[clamp(32px,5vw,48px)] leading-[120%] font-semibold text-white">
             Be part of the future of <br className="hidden sm:block" />
             <UnderlinedWord size="smaller">IdentityHub</UnderlinedWord>

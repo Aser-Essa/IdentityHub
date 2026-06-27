@@ -6,7 +6,7 @@ import { useMediaQuery } from "react-responsive";
 type HeroInfoCardProps = {
   left?: number;
   right?: number;
-  y?: number;
+  top?: number;
   bottom?: number;
   iconSrc: string;
   title: string;
@@ -16,7 +16,7 @@ type HeroInfoCardProps = {
 export default function HeroInfoCard({
   left,
   right,
-  y,
+  top,
   bottom,
   iconSrc,
   title,
@@ -29,13 +29,13 @@ export default function HeroInfoCard({
     setIsMounted(true);
   }, []);
 
-  const topPercent = y && isMounted && isMobile ? y / 2 : y;
+  const topPercent = top && isMounted && isMobile ? top / 2 : top;
   const bottomPercent = bottom && isMounted && isMobile ? bottom * 2 : bottom;
 
   const positons = {
     left,
     right,
-    y: topPercent,
+    top: topPercent,
     bottom: bottomPercent,
   };
 

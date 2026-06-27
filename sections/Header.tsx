@@ -12,7 +12,9 @@ import SideMobileMenu from "@/components/SideMobileMenu";
 
 export default function Header() {
   useGSAP(() => {
-    const tl = gsap.timeline({});
+    const tl = gsap.timeline({
+      delay: 3.2,
+    });
 
     tl.to("header", {
       clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",

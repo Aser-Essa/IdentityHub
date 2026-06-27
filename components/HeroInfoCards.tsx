@@ -5,12 +5,12 @@ export default function HeroInfoCards() {
   return (
     <div className=" ">
       {HeroInfoCardsDetails.map(
-        ({ left, right, y, bottom, iconSrc, title, description }, idx) => (
+        ({ left, right, top, bottom, iconSrc, title, description }, idx) => (
           <HeroInfoCard
             key={`${title} , ${idx}`}
             left={left}
             right={right}
-            y={y}
+            top={top}
             bottom={bottom}
             iconSrc={iconSrc}
             title={title}
