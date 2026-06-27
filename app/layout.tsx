@@ -34,12 +34,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="overflow-x-hidden">
+    <html lang="en" className="">
       <body
         className={`${soraSans.variable} ${interSans.variable} ${sourceCodePro.variable} bg-darkBase text-softBlue relative overflow-x-hidden antialiased`}
       >
         <Preloader />
-
         <Header />
         <div id="top"></div>
         <div id="smooth-wrapper">

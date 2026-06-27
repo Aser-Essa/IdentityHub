@@ -17,15 +17,19 @@ export default function GSAPClientWrapper({
 
   useGSAP(() => {
     ScrollSmoother.create({
-      smooth: 2,
-      smoothTouch: 0.1,
+      wrapper: "#smooth-wrapper",
+      content: "#smooth-content",
+      smooth: 1.5,
+      smoothTouch: 0.001,
       effects: true,
     });
   }, []);
 
   useGSAP(() => {
     gsap.to(".GSAP-client-wrapper", {
-      opacity: 100,
+      opacity: 1,
+      duration: 0.6,
+      ease: "power2.out",
     });
   });
 
