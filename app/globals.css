@@ -54,7 +54,7 @@
 body,
 .preloader-wrapper,
 #smooth-content {
-  background-color: var(--color-darkBase);
+  /* background-color: var(--color-darkBase); */
   /* background-image: url("/background.png") !important; */
   object-fit: cover;
 }
