@@ -31,7 +31,7 @@ export default function Header() {
 
   return (
     <header
-      className="fixed  top-0 left-1/2 z-10000 mt-4 flex h-[51px] w-[calc(100%-16px)] max-w-[963px] -translate-x-1/2 items-center justify-between gap-8 rounded-[9px] border border-[#ffffff1a] bg-[rgba(15,12,23,0.17)] p-2.5 backdrop-blur-[8px] sm:w-[calc(100%-32px)] md:w-[85%]"
+      className="fixed  top-0 left-1/2 z-10000 mt-4 flex h-[51px] w-[calc(100%-32px)] max-w-[963px] -translate-x-1/2 items-center justify-between gap-8 rounded-[9px] border border-[#ffffff1a] bg-[rgba(15,12,23,0.17)] p-2.5 backdrop-blur-[8px] sm:w-[calc(100%-32px)] md:w-[85%]"
       style={{ clipPath: "polygon(0 0, 0 0, 0 100%, 0% 100%)" }}
     >
       <Logo />
