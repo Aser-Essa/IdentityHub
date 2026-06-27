@@ -5,8 +5,11 @@ import { SplitText } from "gsap/all";
 import Image from "next/image";
 import BackgroundLights from "./BackgroundLights";
 import FloatingBalls from "./FloatingBalls";
+import { useMediaQuery } from "react-responsive";
 
 export default function Preloader() {
+  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
+
   useGSAP(() => {
     const coreTimeline = gsap.timeline();
     const infiniteTimeline = gsap.timeline();
@@ -118,11 +121,11 @@ export default function Preloader() {
         .to(
           ".preloader-wrapper",
           {
-            duration: 0.5,
+            duration: isMobile ? 1 : 0.5,
             ease: "power2.inOut",
             y: 1250,
             x: 5000,
-            scale: 50,
+            scale: isMobile ? 40 : 50,
           },
           "<+=0.3",
         )
