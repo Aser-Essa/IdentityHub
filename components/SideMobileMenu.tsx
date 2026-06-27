@@ -1,5 +1,4 @@
 "use client";
-// #140c2af2
 import { useState, useEffect } from "react";
 import { createPortal } from "react-dom";
 import { FaBars, FaXmark } from "react-icons/fa6";
@@ -9,6 +8,7 @@ import Button from "@/components/Button";
 import { navLinksArray } from "@/constants";
 import { IoIosArrowForward } from "react-icons/io";
 import BackgroundLights from "./BackgroundLights";
+import { cn } from "@/lib/utils";
 
 export default function SideMobileMenu() {
   const [open, setOpen] = useState(false);
@@ -18,7 +18,6 @@ export default function SideMobileMenu() {
     setMounted(true);
   }, []);
 
-  // lock body scroll
   useEffect(() => {
     if (!mounted) return;
     document.body.style.overflow = open ? "hidden" : "";
@@ -39,11 +38,17 @@ export default function SideMobileMenu() {
           <>
             <div
               onClick={() => setOpen(false)}
-              className={`fixed inset-0 z-[100000] bg-black/60 transition-opacity duration-300 ${open ? "opacity-100" : "pointer-events-none opacity-0"}`}
+              className={cn(
+                "fixed inset-0 z-[100000] bg-black/60 transition-opacity duration-300",
+                open ? "opacity-100" : "pointer-events-none opacity-0",
+              )}
             />
 
             <aside
-              className={`fixed top-0 right-0 z-[1000000] h-full w-[85%] max-w-sm transform overflow-hidden rounded-l-xl border-l border-[#ffffff17] bg-[rgba(15,12,23,0.95)] p-6 pt-8 backdrop-blur-xl transition-transform duration-300 ${open ? "translate-x-0" : "translate-x-full"}`}
+              className={cn(
+                "fixed top-0 right-0 z-[1000000] h-full w-[85%] max-w-sm overflow-hidden rounded-l-xl border-l border-[#ffffff17] bg-[rgba(15,12,23,0.95)] p-6 pt-8 backdrop-blur-xl transition-transform duration-300",
+                open ? "translate-x-0" : "translate-x-full",
+              )}
             >
               <div className="mb-10 flex items-center justify-between">
                 <div className="flex items-end gap-2 text-xl font-bold">
@@ -71,9 +76,9 @@ export default function SideMobileMenu() {
                   </li>
                 ))}
               </ul>
+
               <BackgroundLights className="top-1/2 -translate-y-1/2 opacity-60" />
 
-              {/* CTA */}
               <Button className="!absolute bottom-6 left-1/2 flex h-[56px] w-[calc(100%-48px)] -translate-x-1/2 items-center justify-center gap-1 text-base">
                 <span>Start free trial</span>
                 <IoIosArrowForward />

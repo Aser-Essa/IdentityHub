@@ -21,7 +21,7 @@ export default function ServiceCard({
           <div className="absolute h-full w-full bg-[#6B05B4] opacity-[25%]"></div>
         </div>
         <div className="masked-image relative h-74 w-85 rounded-[25.6px] text-[#D6DDF8] max-[360px]:w-full">
-          <Image src="/mask-border.svg" fill alt="masked-border" />
+          <Image src="/mask-border.svg" fill alt="masked-border" className="  object-cover" />
 
           <Image src={iconSrc} width={42} height={42} alt="service-card-1" />
           <p className="font-Aeonik mt-5.5 w-full text-[22px] leading-[120%] font-medium sm:w-[70%]">

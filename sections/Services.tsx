@@ -27,7 +27,7 @@ export default function Services() {
 
   return (
     <>
-      <section className="mt-36.5 px-4 sm:px-10" id="services">
+      <section className="mt-36.5 px-0 sm:px-10" id="services">
         <SectionHeader
           label={"Services"}
           title={
