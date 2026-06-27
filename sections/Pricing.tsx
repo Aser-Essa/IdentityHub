@@ -69,7 +69,6 @@ export default function Pricing() {
 
         <div className="relative mx-auto mt-8 w-full max-w-264 space-y-8">
           <BackgroundLights className="top-[-46px]" />
-
           <div className="flex flex-wrap items-center justify-center gap-5 lg:flex-nowrap">
             {PricingPlansData?.map((plan) => (
               <PricingCard key={`${plan?.planType}`} plan={plan} />

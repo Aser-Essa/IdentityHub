@@ -1,14 +1,12 @@
 "use client";
 import Button from "@/components/Button";
 import Logo from "@/components/Logo";
+import SideMobileMenu from "@/components/SideMobileMenu";
 import { navLinksArray } from "@/constants";
-import React from "react";
-import { IoIosArrowForward } from "react-icons/io";
-import { FaBars } from "react-icons/fa6";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { IoIosArrowForward } from "react-icons/io";
 import { Link } from "react-scroll";
-import SideMobileMenu from "@/components/SideMobileMenu";
 
 export default function Header() {
   useGSAP(() => {

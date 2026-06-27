@@ -7,6 +7,7 @@ import gsap from "gsap";
 export default function HeroSection() {
   useGSAP(() => {
     const tl = gsap.timeline({
+      delay: 3.2,
       scrollTrigger: {
         trigger: ".herosection",
         start: "top 25%",
@@ -74,7 +75,7 @@ export default function HeroSection() {
         {
           opacity: 0,
           left: "50%",
-          y: "50%",
+          top: "50%",
           duration: 0.65,
           delay: 0.2,
           ease: "power1.inOut",

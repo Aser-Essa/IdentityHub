@@ -1,8 +1,5 @@
 "use client";
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
 import Image from "next/image";
-import React from "react";
 
 export default function FloatingBalls() {
   return (
