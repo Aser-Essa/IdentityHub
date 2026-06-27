@@ -68,7 +68,7 @@ export default function CTA() {
             className="object-cover"
           />
         </div>
-        <div className="font-sora absolute top-1/2 left-1/2 z-50 w-full -translate-1/2 text-center">
+        <div className="font-sora px-4 md:px-20 absolute top-1/2 left-1/2 z-50 w-full -translate-1/2 text-center">
           <p className="mb-5 text-[clamp(32px,5vw,48px)] leading-[120%] font-semibold text-white">
             Be part of the future of <br className="hidden sm:block" />
             <UnderlinedWord size="smaller">IdentityHub</UnderlinedWord>
