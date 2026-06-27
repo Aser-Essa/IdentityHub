@@ -59,7 +59,9 @@ body,
   object-fit: cover;
 }
 
-
+* {
+  will-change: transform
+}
 
 ::-webkit-scrollbar {
   display: none;
