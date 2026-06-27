@@ -59,9 +59,6 @@ body,
   object-fit: cover;
 }
 
-* {
-  will-change: transform
-}
 
 ::-webkit-scrollbar {
   display: none;
@@ -141,7 +138,7 @@ body,
   width: 20px;
   height: 20px;
   left: 50%;
-  top: 50%;
+  y: 50%;
   transform: translate(-50%, -50%);
   padding: 0.8px;
   -webkit-mask:

@@ -6,7 +6,7 @@ import HeroInfoCards from "./HeroInfoCards";
 export default function HeroVisual() {
   return (
     <>
-      <BackgroundLights className="top-27.5" />
+      {/* <BackgroundLights className="top-27.5" /> */}
       <Image
         src={"/radio-waves.svg"}
         fill

@@ -35,7 +35,7 @@ export default function HeroInfoCard({
   const positons = {
     left,
     right,
-    top: topPercent,
+    y: topPercent,
     bottom: bottomPercent,
   };
 

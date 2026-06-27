@@ -20,7 +20,7 @@ export default function Features() {
       />
 
       <div className="relative mx-auto mt-8 w-full max-w-264 space-y-8">
-        <BackgroundLights className="top-[-46px]" />
+        {/* <BackgroundLights className="top-[-46px]" /> */}
         {FeaturesCardsData?.map(
           ({ mainColor, title, featuresList, imageUrl }, idx) => (
             <FeatureCard

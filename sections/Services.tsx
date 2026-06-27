@@ -20,7 +20,7 @@ export default function Services() {
           ? "play play play play"
           : "play play play reverse",
       },
-      top: 450,
+      y: 450,
       stagger: 0.2,
     });
   });
