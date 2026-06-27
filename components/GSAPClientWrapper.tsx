@@ -16,6 +16,14 @@ export default function GSAPClientWrapper({
   gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin, SplitText);
 
   useGSAP(() => {
+    ScrollSmoother.create({
+      smooth: 2,
+      smoothTouch: 0.1,
+      effects: true,
+    });
+  }, []);
+
+  useGSAP(() => {
     gsap.to(".GSAP-client-wrapper", {
       opacity: 100,
     });

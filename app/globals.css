@@ -52,10 +52,14 @@
 }
 
 body,
-.preloader-wrapper {
-  background-image: url("/background.png");
+.preloader-wrapper,
+#smooth-content {
+  background-color: var(--color-darkBase);
+  background-image: url("/background.png") !important;
   object-fit: cover;
 }
+
+
 
 ::-webkit-scrollbar {
   display: none;
