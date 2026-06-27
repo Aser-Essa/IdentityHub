@@ -55,10 +55,19 @@ body,
 .preloader-wrapper,
 #smooth-content {
   /* background-color: var(--color-darkBase); */
-  /* background-image: url("/background.png") !important; */
+  background-image: url("/background.png") !important;
   object-fit: cover;
 }
 
+
+@media (max-width: 991px) {
+  body,
+  .preloader-wrapper,
+  #smooth-content {
+    background-color: none;
+    background-image: none !important;
+  }
+}
 
 
 ::-webkit-scrollbar {

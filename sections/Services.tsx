@@ -27,14 +27,14 @@ export default function Services() {
 
   return (
     <>
-      <section className="mt-36.5 px-0 sm:px-10" id="services">
+      <section className="mt-20 md:mt-36.5 px-0 sm:px-10" id="services">
         <SectionHeader
           label={"Services"}
           title={
             <p>
               See our services for
               <br /> secure your{" "}
-              <span className="text-gradient-blue-pink-horizontal">Data</span>
+              <span className="text-gradient-blue-pink-horizontal px-4 sm:px-0">Data</span>
             </p>
           }
           subTitle={`Make your data invisible by generating unlimited identities. The 

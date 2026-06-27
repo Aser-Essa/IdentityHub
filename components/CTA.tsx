@@ -58,7 +58,10 @@ export default function CTA() {
 
   return (
     <>
-      <section className="CTA-section relative mt-36.5 min-h-[504px]" id="CTA">
+      <section
+        className="CTA-section relative mt-20 md:mt-36.5 min-h-[504px]"
+        id="CTA"
+      >
         <BackgroundLights className="BackgroundLightss -top-11.5 left-[42.6%] z-50 max-h-120 max-w-120 opacity-45 blur-[50px]" />
         <div className="radio-wavess absolute top-1/2 !left-1/2 aspect-square max-h-[595px] w-[95%] max-w-[595px] -translate-x-1/2 -translate-y-1/2 sm:-top-11.5 sm:w-[90%] sm:translate-y-0">
           <Image

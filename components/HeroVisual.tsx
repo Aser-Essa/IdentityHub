@@ -21,7 +21,7 @@ export default function HeroVisual() {
             priority
             fill
             alt="herosection-image"
-            className="herosection-image"
+            className="herosection-image object-cover"
           />
         </div>
         <HeroInfoCards />

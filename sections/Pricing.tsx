@@ -50,7 +50,7 @@ export default function Pricing() {
 
   return (
     <>
-      <section className="relative mt-36.5 px-4 md:px-20" id="pricing">
+      <section className="relative mt-20 md:mt-36.5 px-4 md:px-20" id="pricing">
         <div className="lined-ball absolute -top-26 right-4 size-20 md:size-31.5">
           <Image src="/lined-ball.svg" fill alt="lined-ball" />
         </div>
