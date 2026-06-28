@@ -62,7 +62,7 @@ export default function SectionHeader({
   );
 
   return (
-    <div ref={containerRef} className="section-header mx-auto text-center">
+    <div ref={containerRef} className="section-header px-4 mx-auto text-center">
       <Label>{label}</Label>
       <div className="section-header-title font-sora text-softBlue mt-1.5 overflow-hidden text-[clamp(28px,4.5vw,32px)] leading-[120%] font-semibold">
         {title}

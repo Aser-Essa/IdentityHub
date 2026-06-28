@@ -97,10 +97,10 @@ export default function FeatureCard({
             y: 150,
             x: 150,
             opacity: 0,
-            duration: 0.4,
+            duration: .6,
             ease: "power1.inOut",
           },
-          "<+=.2",
+          "<",
         );
     },
     { scope: cardRef },

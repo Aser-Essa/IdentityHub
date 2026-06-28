@@ -8,11 +8,6 @@ export default function HeroSection() {
   useGSAP(() => {
     const tl = gsap.timeline({
       delay: 3.2,
-      scrollTrigger: {
-        trigger: ".herosection",
-        start: "top 25%",
-        end: "85% 20%",
-      },
     });
 
     tl.from(".hero-content .label", {
